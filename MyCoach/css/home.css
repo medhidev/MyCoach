@@ -1,0 +1,28 @@
+/* PRESENTATION */
+
+h2{
+    color: white;
+}
+
+#presentation{
+    margin-top: 10%;
+}
+
+#coach_img{
+    border-radius: 20px;
+}
+
+#coach{
+    margin-left: 5%;
+    float: left;
+}
+
+#presentation_content{
+    float: right;
+    background-color: black;
+    color: #ffbb00;
+    padding: 50px;
+    width: 50%;
+    border-radius: 20px;
+    margin-right: 10%;
+}
