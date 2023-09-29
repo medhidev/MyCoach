@@ -1,5 +1,6 @@
 CREATE DATABASE mycoach;
 
+-- LIEU
 CREATE TABLE mycoach.Lieu
 (
     NumSalle INT PRIMARY KEY,
@@ -8,16 +9,20 @@ CREATE TABLE mycoach.Lieu
     CodePostale INT(5)
 ) ENGINE=InnoDB;
 
--- 1 Musculation
--- 2 Boxe
--- 3 Athlétisme
+-- SPORT
 CREATE TABLE mycoach.Sport
 (
     NomSport VARCHAR(30),
     ID_sport INT AUTO_INCREMENT PRIMARY KEY
+    -- ID sport: 
+    -- 1 Musculation
+    -- 2 Boxe
+    -- 3 Athlétisme
 
 ) ENGINE=InnoDB;
 
+
+-- SEANCE
 CREATE TABLE mycoach.Seance
 (
     ID_seance INT AUTO_INCREMENT PRIMARY KEY,
@@ -31,4 +36,14 @@ CREATE TABLE mycoach.Seance
 
     CONSTRAINT fk_numsalle FOREIGN KEY (NumSalle) REFERENCES Lieu(NumSalle),
     CONSTRAINT fk_idsport FOREIGN KEY (ID_sport) REFERENCES Sport(ID_sport)
+) ENGINE=InnoDB;
+
+-- UTILISATEUR
+CREATE TABLE mycoach.utilisateur
+(
+    nom_utilisateur VARCHAR(50) PRIMARY KEY,
+    nom VARCHAR(50),
+    prenom VARCHAR(50),
+    adresse VARCHAR(100),
+    mot_de_passe VARCHAR(50)
 ) ENGINE=InnoDB;

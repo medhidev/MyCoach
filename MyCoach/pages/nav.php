@@ -12,18 +12,17 @@
                     </a>
             </div>
             <li id="contact">
-                <!-- Contact -->
+                <!-- Contacter le Coach -->
                 <a href="contact.php" style="padding-left: 5%;">Contact</a>
             </li>
             <li id="cours">
-                <!-- Gestion des cours -->
+                <!-- Emploie du temps des séances -->
                 <a href="seance.php">Seance</a>
             </li>
-            <div id="rdv_btn">
-                <li id="rdv">
-                    <!-- Prendre rendez vous -->
+            <div id="login_btn">
+                <li id="login">
                     <!-- Formulaire inscription / connexion -->
-                    <a href="rdv.php">Prendre rendez vous</a>
+                    <a href="login.php">Connecter</a>
                 </li>
             </div>
         </ul>

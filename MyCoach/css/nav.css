@@ -29,13 +29,13 @@ nav a{
 }
 
 /* Boutton */
-#rdv_btn a:hover{
+#login_btn a:hover{
     transition: 1s;
     background-color: white;
     color: black;
 }
 
-#rdv_btn a{
+#login_btn a{
     display: flex;
     justify-content: end;
     background-color: #ffbb00;
