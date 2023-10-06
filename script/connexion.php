@@ -11,5 +11,5 @@
   }
   catch(Exception $e){
     die ("Connection Impossible avec '$host'".$e->getMessage());
-  } 
+  }
 ?>

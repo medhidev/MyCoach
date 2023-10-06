@@ -11,10 +11,10 @@
                         <img src="../images/logo.jpg" alt="logo" width="200px">
                     </a>
             </div>
-            <li id="contact">
-                <!-- Contacter le Coach -->
-                <a href="contact.php" style="padding-left: 5%;">Contact</a>
-            </li>
+            <!-- <li id="contact">
+                Contacter le Coach
+                <a href="#" style="padding-left: 5%;">Contact</a>
+            </li> -->
             <li id="cours">
                 <!-- Emploie du temps des séances -->
                 <a href="seance.php">Seance</a>

@@ -9,11 +9,11 @@
 </head>
 
 <!-- Barre de Navigaton -->
-
 <?php
     include_once("nav.php");
 ?>
 
+<!-- Emploie du temps -->
 <body>
     <table id="tableau">
         <thead>
@@ -51,57 +51,8 @@
                 </tr>
             </div>
             <?php
-                include("../php/script/working_time.php");
-                while($rowBDD != false){
-                    $nomSeance = $rowBDD["NomSeance"];
-                    $difficulte = $rowBDD["Difficulte"];
-                    $jour = $rowBDD["Jour"];
-
-                    $heure_deb = $rowBDD["Heure_Debut"];
-                    $heure_fin = $rowBDD["Heure_Fin"];
-
-                    $numSalle = $rowBDD["NumSalle"];
-                    $adresse = $rowBDD["Adresse"];
-                    $ville = $rowBDD["Ville"];
-                    $codePostale = $rowBDD["CodePostale"];
-                    $nomSport = $rowBDD["NomSport"];
-                    echo "
-                        <tr>
-                            <td>
-                                <!-- Nom Seance -->".
-                                $nomSeance."
-                            </td>
-                            <td>
-                                <!-- Difficulte seance -->".
-                                $difficulte."
-                            </td>
-                            <td>
-                                <!-- Jour -->".
-                                $jour."
-                            </td>
-                            <td>
-                                <!-- Heure debut seance-->".
-                                $heure_deb."
-                            </td>
-                            <td>
-                                <!-- Heure fin seance-->".
-                                $heure_fin."
-                            </td>
-                            <td>
-                                <!-- Numéro Salle -->
-                                salle".$numSalle."
-                            </td>
-                            <td>
-                                <!-- Adresse + Ville + Code Postale -->".
-                                $adresse." ".$ville." ".$codePostale."
-                            </td>
-                            <td>
-                                <!-- Sport -->".
-                                $nomSport."
-                            </td>
-                        </tr>";
-                    $rowBDD = $connectBDD->fetch();
-                }
+                // script des séances du coach 
+                include_once("../script/organisation.php");
             ?>
         </tbody>
     </table>

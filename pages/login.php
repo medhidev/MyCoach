@@ -38,8 +38,6 @@
             <tr>
                 <th colspan="2">
                     <p>
-                        <!-- <input type="button" value="créer un compte"> -->
-                        <a href="register.php">créer un compte</a>
                         <input type="submit" value="Connecter">
                     </p>
                 </th>
