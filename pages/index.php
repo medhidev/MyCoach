@@ -3,45 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Home - MyCoach</title>
 </head>
 <body>
-    <!-- Barre de navigation -->
-    <nav>
-        <ul>
-            <div id="home_icon">
-                <li>
-                    <!-- LOGO -->
-                    <a href="#" id="logo">
-                        <img src="images/logo.jpg" alt="logo" width="200px">
-                    </a>
-                </li>
-            </div>
-            <div id="link">
-                <li id="cours">
-                    <!-- Gestion des cours -->
-                    <a href="pages/gestion_cours.php">Gestion des cours</a>
-                </li>
-                <li id="contact">
-                    <!-- Contact -->
-                    <a href="pages/contact.php">Contact</a>
-                </li>
-            </div>
-            <div id="rdv_btn">
-                <li id="rdv">
-                    <!-- Prendre rendez vous -->
-                    <!-- Formulaire inscription / connexion -->
-                    <a href="pages/rdv.php">Prendre rendez vous</a>
-                </li>
-            </div>
-        </ul>
-    </nav>
+<!-- Barre de navigation -->
+    <?php
+        include_once("nav.php");
+    ?> 
 
     <div id="presentation">
         <div id="coach">
             <!-- image de présentation du coach -->
-            <img src="images/coach.jpg" alt="coach" id="coach_img" width="500px">
+            <img src="../images/coach.jpg" alt="coach" id="coach_img" width="500px">
         </div>
     
         <div id="presentation_content">
@@ -99,4 +74,8 @@
         </div>
     </div>
 </body>
+
+<?php
+    include_once("footer.php");
+?> 
 </html>

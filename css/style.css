@@ -1,0 +1,11 @@
+/* CSS COMMUN */
+
+body {
+    background-color: rgb(20 20 20);
+    font-family: Arial;
+}
+
+/* Enlève la surbrillance des fields */
+input:focus{
+    outline: none;
+}
