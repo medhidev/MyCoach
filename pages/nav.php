@@ -25,6 +25,9 @@
                     <a href="login.php">Connecter</a>
                 </li>
             </div>
+            <!-- <li id="profil">
+                    Nom Profil
+            </li> -->
         </ul>
     </nav>
 </header>

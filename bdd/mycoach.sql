@@ -44,6 +44,6 @@ CREATE TABLE mycoach.utilisateur
     nom_utilisateur VARCHAR(50) PRIMARY KEY,
     nom VARCHAR(50),
     prenom VARCHAR(50),
-    adresse VARCHAR(100),
+    email VARCHAR(100),
     mot_de_passe VARCHAR(50)
 ) ENGINE=InnoDB;

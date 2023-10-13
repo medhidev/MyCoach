@@ -12,7 +12,7 @@
     include_once("nav.php");
 ?>
 <body>
-    <form action="../php/script/formulaire.php" method="post" id="formulaire_connexion">
+    <form action="../script/connexion_form.php" method="post" id="formulaire_connexion">
         <table>
             <thead>
                 <tr>
@@ -24,7 +24,7 @@
                     adresse email
                 </td>
                 <td>
-                    <input type="mail">
+                    <input type="mail" name="email">
                 </td>
             </tr>
             <tr id="mdp">
@@ -32,7 +32,7 @@
                     mot de passe
                 </td>
                 <td>
-                    <input type="password">
+                    <input type="password" name="password">
                 </td>
             </tr>
             <tr>

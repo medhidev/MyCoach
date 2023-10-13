@@ -52,7 +52,7 @@
             </div>
             <?php
                 // script des séances du coach 
-                include_once("../script/organisation.php");
+                include_once("../script/seance_table.php");
             ?>
         </tbody>
     </table>

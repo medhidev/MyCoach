@@ -17,3 +17,6 @@ VALUES ("Musculation"),
 INSERT INTO mycoach.seance(NomSeance, Difficulte, Jour, Heure_Debut, Heure_Fin, NumSalle, ID_Sport)
 VALUES ("Entraînement SQUAT", "Normale", "Lundi", '15:10:00', '16:20:00', 105, 2),
 ("Cardio Vélo + Abdos", "Difficile", "Mercredi", '16:30:00', '18:50:00', 204, 1);
+
+INSERT INTO mycoach.utilisateur
+VALUES ("MedGrim", "Grimal", "Medhi", "grimalmedhi4@gmail.com", "password");
