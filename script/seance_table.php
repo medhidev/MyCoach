@@ -1,6 +1,6 @@
 <?php
-    require_once("connexion.php");
-    require_once("request.php");
+    require_once("request/bdd_connect.php");
+    require_once("request/seance.php");
 
     while($rowBDD != false){
 
