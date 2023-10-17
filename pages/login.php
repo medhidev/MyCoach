@@ -13,10 +13,10 @@
 ?>
 <body>
     <form action="../script/connexion_form.php" method="post" id="formulaire_connexion">
-        <table>
+        <table style="border-collapse: collapse;">
             <thead>
                 <tr>
-                    <th colspan="2">Compte myCoach</th>
+                    <th colspan="2" id="head_form">Compte myCoach</th>
                 </tr>
             </thead>
             <tr id="email">
@@ -24,7 +24,7 @@
                     adresse email
                 </td>
                 <td>
-                    <input type="mail" name="email">
+                    <input type="mail" name="email" required>
                 </td>
             </tr>
             <tr id="mdp">
@@ -32,7 +32,7 @@
                     mot de passe
                 </td>
                 <td>
-                    <input type="password" name="password">
+                    <input type="password" name="password" required>
                 </td>
             </tr>
             <tr>
@@ -44,8 +44,9 @@
             </tr>
         </table>
         <?php
-            if(isset($_SESSION["error"]))
-                echo $_SESSION["error"];
+            if(isset($_GET["error"])){
+                echo "<strong style='color:red;'>".$_GET["error"]."</strong>";
+            }
         ?>
     </form>
 </body>

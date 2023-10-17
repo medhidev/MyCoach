@@ -4,7 +4,6 @@
 
     $email = $_POST["email"];
     $mdp = $_POST["password"];
-    // $error="";
     
     // requête -> tout les informations utilisateur
     $request_info = "SELECT * FROM utilisateur WHERE email='$email' AND mot_de_passe='$mdp'";
@@ -13,20 +12,12 @@
 
     if($row_user){
         $_SESSION["username"] = $row_user["nom_utilisateur"];
-        header("Location: ../pages/index.php");
+        header("Location: ../pages/seance.php");
     }
 
     else {
         // reste sur la page en cas d'erreur
-        $_SESSION["error"] = "Utilisateur Introuvable";
-        // header("Location: ../pages/login.php");
-        
+        header("Location: ../pages/login.php?error=le nom est introuvable");
     }
-
-    // if ($email == $row_user["email"] && $mdp == $row_user["mot_de_passe"]){
-    //     // $_SESSION["username"] = $row_user["nom_utilisateur"];
-    //     header("Location : ../pages/seance.php");
-    // }
-    // 
 
 ?>

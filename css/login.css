@@ -3,7 +3,7 @@
     justify-content: center;
     padding-top: 10%;
     border: none;
-    border-color: #ffbb00;
+    border-radius: 50px;
 }
 
 th{
@@ -19,4 +19,5 @@ td{
 tr{
     background-color: #ffbb00;
     border: none;
+    
 }

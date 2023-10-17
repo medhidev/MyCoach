@@ -19,15 +19,30 @@
                 <!-- Emploie du temps des séances -->
                 <a href="seance.php">Seance</a>
             </li>
+            <li id="profil">
+                <!-- Nom profil -->
+                <?php
+                    if(session_status() != PHP_SESSION_ACTIVE){
+                        session_start();
+                        if(isset($_SESSION["username"]))
+                            echo "<strong style='color:white; font-size:25px;'>".strtoupper($_SESSION["username"])."</strong>";
+                        else
+                            echo "<strong style='color:white; font-size:25px;'>"."INVITE"."</strong>";
+                    }
+                ?>
+            </li>
             <div id="login_btn">
                 <li id="login">
                     <!-- Formulaire inscription / connexion -->
-                    <a href="login.php">Connecter</a>
+                    <?php
+                        if(isset($_SESSION["username"])){
+                            echo "<a href='../script/logout.php'>Deconnexion</a>";
+                        }
+                        else
+                            echo "<a href='login.php'>Connecter</a>";
+                    ?>
                 </li>
             </div>
-            <!-- <li id="profil">
-                    Nom Profil
-            </li> -->
         </ul>
     </nav>
 </header>
